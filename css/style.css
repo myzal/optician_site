@@ -1,0 +1,238 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:24px;
+}
+#header a{
+    text-transform: uppercase;
+color: deepskyblue;
+}
+#header .navbar-header a{
+    font-size: 40px;
+    margin-left: 40px;
+}
+#header .navbar-right{
+    margin-right:40px;
+    font-size:22px;
+}
+#home{
+    background: url(../img/home4.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 768px;
+}
+body .navbar-fixed-top{
+    margin-top:30px;
+}
+.navbar-brand {
+    font-style: italic;
+}
+.navbar-brand>img {
+    display: inline-block;
+    max-height: 90%;
+    margin-bottom: 25px;
+}
+#header a:hover{
+    background-color:deepskyblue;
+    color:white;
+}
+#about-us, #glasses{
+    margin-top:30px;
+}
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: black;
+    letter-spacing: 4px;
+}
+#about-us  .about-us-text{
+    font-size: 24px;
+}
+h3 {
+    font-size: 31px;
+    font-style: italic;
+    letter-spacing: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#map{
+    height:400px;
+}
+body .navbar-default {
+    background:white;
+    opacity: 0.98;
+}
+.footer-left {
+    padding: 10px 8px 10px 0;
+    text-align: left;
+    width: 100%;
+}
+footer{
+    padding: 40px 8px 40px 0;
+    background: #e2e2e2;
+    margin-top: 30px;
+}
+footer p {
+    font-size: 1em;
+}
+.arrow{
+    position: fixed;
+    display: none;
+    text-decoration: none;
+    right: 50px;
+    bottom: 50px;
+    font-size: 50px;
+    z-index: 1000;
+    color: deepskyblue;
+    height: 50px;
+    width: 50px;
+    background: #e2e2e2;
+    line-height: 50px;
+    text-align: center;
+}
+.social-media {
+    float: right;
+    margin-right: 50px;
+}
+.social-media i{
+    font-size: 2em;
+    padding-left: 45px;
+}
+.fa-envelope-o:hover{
+    color:#fac200;
+}
+.fa-facebook-official:hover{
+color:    #3b5998;
+}
+.fa-skype:hover {
+    color: #00AFF0;
+}
+.social-media a{
+    color:inherit;
+}
+#glasses .row .col-sm-3 {
+    position:relative;
+}
+#glasses .row .col-sm-3 img  {
+    width:100%;
+    vertical-align:top;
+}
+#glasses .row .col-sm-3:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;;
+}
+#glasses .row .col-sm-3:hover:after {
+    opacity:1;
+}
+#lenses span{
+    font-weight: bold;
+}
+.text-mobile{
+    display: none;
+}
+    body .navbar-nav li a, #header .navbar-header a {
+        line-height: 100px;
+        height: 100px;
+        padding-top: 0;
+    }
+form input.ng-dirty.ng-invalid {
+    border: solid 1px #FF0000;
+}
+.contact-form label{
+    display: none;
+}
+.result {
+    padding: 15px;
+    margin: 0;
+}
+@media screen and (max-width: 1200px) {
+
+    .arrow{
+        right:15px;
+    }
+    #home{
+        height:530px;
+        background-size: cover;
+        background-attachment: inherit;
+    }
+    #header .navbar-header a {
+margin-left:0;
+    }
+    .nav>li>a {
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    #header .navbar-right {
+         margin-right:0;
+    }
+}
+@media screen and (max-width: 992px) {
+    body .navbar-fixed-top {
+        margin-top: 0px;
+    }
+    body .navbar-nav li a
+    {
+        line-height: 50px;
+        height: 50px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .navbar-toggle {
+   margin-top:15px;
+    }
+.text-mobile{
+    display:block;
+    margin-top: 50px;
+}
+    footer p,.social-media {
+text-align: center;
+float:none;
+    }
+}
+@media screen and (max-width: 768px) {
+    body,#about-us  .about-us-text{
+        font-size: 21px;
+    }
+    .social-media i {
+        padding-left: 23px;
+    }
+    footer p{
+        font-size:0.6em;
+    }
+    #map {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    body, #about-us .about-us-text {
+        font-size: 17px;
+    }
+    #home {
+        height: 370px;
+    }
+    #map {
+        height: 300px;
+        margin: 0;
+    }
+    #header .navbar-header a {
+        font-size: 24px;
+    }
+    .navbar-brand>img {
+        display: inline-block;
+        max-height: 50%;
+    }
+    }
